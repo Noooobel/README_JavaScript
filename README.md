@@ -45,7 +45,7 @@ document.getElementById("add-text").value = "";
 ### タグの生成
 console.log(li);でタグが生成されていることを確認することができます。
 
-javascriptに生成したdivにクラスをつけることもできます。
+javascriptにDOM生成したdivにクラスをつけることもできます。
 
 p.innerText = inputText;のようにしてあげることで、変数名（inputText）の文字列を参照してくれます。
 
