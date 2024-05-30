@@ -6,6 +6,7 @@ document.getElementById、このメソッド（add-button）を取得してこ�
 ※補足　getElementById（"idを取得できる"）
 
 ※補足　addEventListener（"イベントの種類", 実行処理）下記の文では二つの引数を取得していますが厳密には三つまで引数を取得することが可能です。
+#### ソースコード
 ```
 //index.js
 
@@ -72,8 +73,7 @@ p.innerText = inputText;のようにしてあげることで、変数名（input
   // 未完了のリストに追加
   document.getElementById("incomplete-list").appendChild(li);
 ```
-
-
+#### ソースコード
 ```
 //index.js
 
