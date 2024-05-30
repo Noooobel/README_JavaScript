@@ -65,6 +65,8 @@ p.innerText = inputText;のようにしてあげることで、変数名（input
 
 また、javascritには、タグの階層構造を設定してあげることでDOMに対して階層構造を持たせることができます。
 
+htmlの方のulタグにidを付与してjavascriptにidをfetchしてあげて、incomplete-listはliの一つ階層上の親ですよと、してあげます。
+
 ```
   // liタグの子要素に各要素を設定
   div.appendChild(p);
