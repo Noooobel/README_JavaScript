@@ -62,10 +62,11 @@ p.innerText = inputText;のようにしてあげることで、変数名（input
   p.className = "todo-item";
   p.innerText = inputText;
 ```
+### 階層構造
 
-また、javascritには、タグの階層構造を設定してあげることでDOMに対して階層構造を持たせることができます。
+javascriptには、タグの階層構造（appendChild();）を設定してあげることでDOMに対して階層構造を持たせることができます。
 
-htmlの方のulタグにidを付与してjavascriptにidをfetchしてあげて、incomplete-listはliの一つ階層上の親ですよと、してあげます。
+htmlの方のulタグにidを付与してjavascriptにidをfetchしてあげて、incomplete-listはliの一つ階層上の親ですよと明示的に記述してあげることで、DOMをhtmlに差し込むことができます。
 
 ```
   // liタグの子要素に各要素を設定
