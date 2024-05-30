@@ -1,5 +1,6 @@
 # README_JavaScript
 ## 言語化
+### Fetch
 document.getElementById、このメソッド（add-button）を取得してこのボタンが押された（click）時に、この関数（onClickAdd）を実行します。
 
 ※補足　getElementById（"idを取得できる"）
