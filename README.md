@@ -1,6 +1,6 @@
 # README_JavaScript
-## 言語化
-### Fetch
+# 言語化
+## Fetch
 document.getElementById、このメソッド（add-button）を取得してこのボタンが押された（click）時に、この関数（onClickAdd）を実行します。
 
 ※補足　getElementById（"idを取得できる"）
@@ -32,7 +32,46 @@ document.getElementById("add-button").addEventListener("click", onClickAdd);
 </html>
 
 ```
-### DOM操作
+## DOM操作
+下記の文章ではinputTextにその時、入力されている値にアクセスできます。
+
+また、その応用でinputTextの中身を空にすることもできます。
+```
+  // テキストボックスの値を取得し、初期化する
+const inputText = document.getElementById("add-text").value;
+document.getElementById("add-text").value = "";
+```
+### タグの生成
+console.log(li);でタグが生成されていることを確認することができます。
+
+javascriptに生成したdivにクラスをつけることもできます。
+
+p.innerText = inputText;のようにしてあげることで、変数名（inputText）の文字列を参照してくれます。
+
+```
+  // li生成
+  const li = document.createElement("li");
+
+  // div生成
+  const div = document.createElement("div");
+  div.className = "list-row";
+
+  // p生成
+  const p = document.createElement("p");
+  p.className = "todo-item";
+  p.innerText = inputText;
+```
+
+また、javascritには、タグの階層構造を設定してあげることでDOMに対して階層構造を持たせることができます。
+
+```
+  // liタグの子要素に各要素を設定
+  div.appendChild(p);
+  li.appendChild(div);
+
+  // 未完了のリストに追加
+  document.getElementById("incomplete-list").appendChild(li);
+```
 
 
 ```
