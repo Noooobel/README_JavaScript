@@ -36,7 +36,7 @@ document.getElementById("add-button").addEventListener("click", onClickAdd);
 ## DOM操作
 下記の文章ではinputTextにその時、入力されている値にアクセスできます。
 
-また、その応用でinputTextの中身を空にすることもできます。
+また、その応用でinputTextの中身を初期化することもできます。
 ```
   // テキストボックスの値を取得し、初期化する
 const inputText = document.getElementById("add-text").value;
